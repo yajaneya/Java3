@@ -32,7 +32,7 @@ public class InOut {
         }
     }
 
-    private static void readFile() {
+    private static void readFile() throws IOException {
         int[] readFile = new int[50];
         FileInputStream in = null;
         try {
@@ -43,6 +43,8 @@ public class InOut {
             in.close();
         } catch (IOException e) {
             System.out.println("Ошибка ввода-вывода");
+        } finally {
+            in.close();
         }
 
         int el = 1;
