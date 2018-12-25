@@ -23,7 +23,7 @@ public class ReadText {
         }
     }
 
-    private static void PrintPage(int page) throws IOException {
+    private static void printPage(int page) throws IOException {
         RandomAccessFile raf = new RandomAccessFile("FileManyPage.txt", "r");
         raf.seek(2*(page-1)*1800);
         for (int i=1; i<=1800; i++) {
