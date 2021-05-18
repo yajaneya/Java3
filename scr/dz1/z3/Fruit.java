@@ -1,6 +1,6 @@
 package dz1.z3;
 
-public class Fruit {
+public abstract class Fruit {
     float weight;
 
     public Fruit(float weight) {
